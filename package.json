@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "author": "Neudesic-Team",
-  "private": true,
+  "private": false,
   "license": "UNLICENSED",
   "main": "dist/src/main.js",
   "repository": {

@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 
-async function bootstrap() {
+async function bootstrapDigitalTwin() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()
     .setTitle('digital-twin-poc')
@@ -19,4 +19,9 @@ async function bootstrap() {
   });
   await app.listen(8000);
 }
-bootstrap();
+
+if (require.main === module) {
+  bootstrapDigitalTwin();
+}
+
+export { bootstrapDigitalTwin };
