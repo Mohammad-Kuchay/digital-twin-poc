@@ -29,8 +29,8 @@ COSMOS_GREMLIN_COLLECTION=
 
 ```typescript
 // app.js/ts
-import { digitalTwinPocModule } from 'digital-twin-poc';
-digitalTwinBootstrap();
+import { bootstrapDigitalTwin } from 'digital-twin-poc';
+bootstrapDigitalTwin();
 ```
 ## Run the app.js
  App will be listening on http://localhost:8000/docs#/
