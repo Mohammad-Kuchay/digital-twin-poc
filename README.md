@@ -36,6 +36,11 @@ $ npm install
 ```bash
 cp .env.sample .env
 #open .env and set the variables
+
+COSMOS_GREMLIN_ENDPOINT=
+COSMOS_GREMLIN_PRIMARY_KEY=
+COSMOS_GREMLIN_DATABASE=
+COSMOS_GREMLIN_COLLECTION=
 ```
 ## Running the app
 

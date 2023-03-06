@@ -2,9 +2,19 @@
   "name": "digital-twin-poc",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Neudesic-Team",
   "private": true,
   "license": "UNLICENSED",
+  "main": "dist/src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad-Kuchay/digital-twin-poc.git"
+  },
+  "keywords": [
+    "nestjs",
+    "gremlin",
+    "graph"
+  ],
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
