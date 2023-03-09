@@ -17,7 +17,7 @@ async function bootstrapDigitalTwin() {
     res.removeHeader('date');
     next();
   });
-  await app.listen(8000);
+  await app.listen(8080);
 }
 
 if (require.main === module) {
