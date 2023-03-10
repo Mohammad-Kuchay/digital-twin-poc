@@ -33,5 +33,5 @@ import { bootstrapDigitalTwin } from 'digital-twin-poc';
 bootstrapDigitalTwin();
 ```
 ## Run the app.js
- App will be listening on http://localhost:8000/docs#/
+ App will be listening on http://localhost:8080/docs#/
 ```
