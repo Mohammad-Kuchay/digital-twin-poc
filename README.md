@@ -1,5 +1,5 @@
 # Digital Twin POC
-## Create an node project
+## Create a node project
 
 ```bash
 $ mkdir some-dir
