@@ -95,7 +95,7 @@ export class EntityRepository {
     const query = `g.V('${id}').outE().project('edge_id', 'edge_label', 'from_id', 'to_id').by(id).by(label).by(inV().id()).by(outV().id())`;
     const vers = await this.gremlinService.execute(query);
     if (!vers._items.length) {
-      throw new NotFoundException('id not found');
+      throw new NotFoundException('id not found or no outEdges');
     }
     return vers;
   }
