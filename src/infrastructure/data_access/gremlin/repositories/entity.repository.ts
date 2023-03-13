@@ -104,7 +104,7 @@ export class EntityRepository {
     const query = `g.V('${id}').bothE().project('edge_id', 'edge_label', 'from_id', 'to_id').by(id).by(label).by(inV().id()).by(outV().id())`;
     const vers = await this.gremlinService.execute(query);
     if (!vers._items.length) {
-      throw new NotFoundException('id not found');
+      throw new NotFoundException('id not found or no edges');
     }
     return vers;
   }
@@ -118,7 +118,7 @@ export class EntityRepository {
   }
 
   async deleteEntity(id: string) {
-    await this.gremlinService.execute(`g.V().has('id',${id}).drop()`);
+    await this.gremlinService.execute(`g.V().has('id', '${id}').drop()`);
     return 'Deleted';
   }
 
